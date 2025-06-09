@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Robe of Many Colors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>The Robe of Many Colors</h1>
+    <p>Click the button to change the colors of the robe!</p>
+
+    <div class="robe-container">
+        <svg id="robe" viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+            <!-- These paths will be colored randomly by JavaScript -->
+            <!-- Main Body -->
+            <path class="color-patch" d="M60,20 L140,20 L160,240 L40,240 Z" />
+            <!-- Left Sleeve -->
+            <path class="color-patch" d="M60,20 L20,70 L40,80 L70,30 Z" />
+            <!-- Right Sleeve -->
+            <path class="color-patch" d="M140,20 L180,70 L160,80 L130,30 Z" />
+            
+            <!-- Patches to overlay -->
+            <path class="color-patch" d="M70,50 L130,50 L130,90 L70,90 Z" />
+            <path class="color-patch" d="M65,95 L135,95 L140,150 L60,150 Z" />
+            <path class="color-patch" d="M60,155 L140,155 L150,220 L50,220 Z" />
+            <path class="color-patch" d="M20,70 L40,80 L45, 120 L25, 110 Z" />
+            <path class="color-patch" d="M180,70 L160,80 L155, 120 L175, 110 Z" />
+        </svg>
+    </div>
+
+    <button id="change-colors-btn">Change Colors</button>
+
+    <script src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
